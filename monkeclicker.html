@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Monke Clicker</title>
+	<h1>Welcome To Monke Clicker created by charlie</h1>
+	<h5>Why is this website important? Why does it even exist? These are the questions I ask myself everyday. This website is useless. Leave while you can.</h5>
+<button>monke</button>
+	<img src="../../Downloads/monke.jpg" width="200" height="200" alt=""/>
+<script>
+const button = document.querySelector('button');
+button.addEventListener('click', event => {
+ button.textContent = `amount of monke: ${event.detail}`;
+	
+
+   const othermonke = document.createElement("img");
+   othermonke.src = "../../Downloads/monke.jpg";
+   othermonke.width = "200";
+   othermonke.height = "200";
+   othermonke.alt = "alttext";
+
+   button.parentElement.appendChild(othermonke);
+});
+	</script>
+</head>
+<body>
+
+</body>
+</html>
